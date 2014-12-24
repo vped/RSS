@@ -1,0 +1,7 @@
+Together
+========
+
+I have done some modification on Raphael Js Free-Transform. Thought to share it. 
+In raphael free transform, there are 8 corners from where we can resize the element.
+But the cursor type is same for all 8 corners. I have modified cursor type as respect to their corners.
+And also added curosr for rotate option.
