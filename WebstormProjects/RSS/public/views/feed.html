@@ -1,0 +1,30 @@
+<div class="row" style="">
+    <div class="container">
+        <div class="col-md-3">
+            <div class="panel panel-primary" >
+                <div class="panel-heading" style="text-align: center">NEWS ITEMS</div>
+                <div class="panel-body">
+                    <div class="drag-box list-group-item list-group-item-info">ITEM</div>
+                    <div class="drag-box list-group-item list-group-item-info">ITEM2</div>
+                    <div class="drag-box list-group-item list-group-item-info ">ITEM3</div>
+                    <div class="drag-box list-group-item list-group-item-info">ITEM4</div>
+                    <div class="drag-box list-group-item list-group-item-info">ITEM5</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 " ng-repeat="panel in newspanel">
+            <div class="panel panel-info" >
+                <div class="panel-heading" style="text-align: center">{{$index+1}}:NEWS CONTENT</div>
+                <div class="panel-body">
+                    <div class="drag-box list-group-item list-group-item-info">ITEM</div>
+                    <div class="drag-box list-group-item list-group-item-info">ITEM2</div>
+                    <div class="drag-box list-group-item list-group-item-info ">ITEM3</div>
+                    <div class="drag-box list-group-item list-group-item-info">ITEM4</div>
+                    <div class="drag-box list-group-item list-group-item-info">ITEM5</div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" ng-click="addPanel()">Add Panel</button>
+        <button type="button" class="btn btn-default" ng-click="deletePanel()">Remove Panel</button>
+        </div>
+    </div>
