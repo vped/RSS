@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- JS -->
+
+
+    <title>RSS</title>
+</head>
+<body ng-app="rss">
+
+    <nav  class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--<div class="col-md-2" style="margin-bottom:30px">-->
+                <!--<img src="" >-->
+                <!--</div>-->
+                <div class="col-md-6">
+                    <h1 style="text-align: center">RSS NEWS FEED</h1>
+                </div>
+                <div  class="col-md-3" style="margin-top: 15px;">
+                    <a class="navbar-brand" href="#/login" style="margin-right: 140px;">USER NAME</a>
+                </div>
+                <div  class="col-md-3" style="margin-top: 15px;">
+                    <img src="vp.jpg" style="width: 20px;height:20px">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+
+</body>
+<script src="libs/angular/angular.min.js"></script>
+
+<script src="libs/angular-route/angular-route.min.js"></script>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/underscore/underscore-min.js"></script>
+
+
+<!-- ANGULAR CUSTOM -->
+<script src="js/controller/home.js"></script>
+<script src="js/controller/feed.js"></script>
+<script src="js/controller/login.js"></script>
+
+<script src="app.js"></script>
+</html>
